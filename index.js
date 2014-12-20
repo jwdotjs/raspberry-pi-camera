@@ -38,7 +38,7 @@ function uploadToS3(localPath, filename) {
 
 function snapPhoto() {
   var localPath = './images/';
-  var filename = moment().format('MM-DD-YYYY_m:hh:ss') + '.jpg';
+  var filename = moment().format('MM-DD-YYYY_h:mm:ss') + '.jpg';
   var args = [
     '--output', localPath + filename,
     '--width', width,
