@@ -27,8 +27,8 @@ function uploadToS3(localPath, filename) {
   client.putFile(
     localPath + filename, filename,
     function(err, result) {
-      if (result.statusCode !== 200) {
-        err = new Error('Upload Failure: ' + result.statusCode);
+      if (err) {
+        err = new Error('Upload Failure: ' + err);
       } else {
         removeLocalFile(localPath + filename);
       }
