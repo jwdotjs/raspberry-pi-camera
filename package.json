@@ -1,13 +1,13 @@
 {
   "name": "raspberry-pi-camera",
-  "version": "0.0.0",
-  "private": true,
+  "description" : "Snap photos from the Raspberry Pi Camera and upload them to AWS S3 at a set interval",
+  "version": "0.1.0",
+  "private": false,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node index"
   },
   "dependencies": {
     "knox": "^0.9.1",
-    "moment": "^2.8.4",
-    "raspicam": "^0.2.13"
+    "moment": "^2.8.4"
   }
 }

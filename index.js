@@ -1,9 +1,9 @@
 var spawn = require('child_process').spawn;
-var RaspiCam = require('raspicam');
 var moment = require('moment');
-var credentials = require('./credentials');
 var knox = require('knox');
 var fs = require('fs');
+
+var credentials = require('./credentials');
 
 var CMD = '/opt/vc/bin/raspistill';
 var snapshotTime = process.env.delay || 10000; // in ms
