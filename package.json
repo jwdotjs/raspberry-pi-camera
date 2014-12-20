@@ -1,0 +1,13 @@
+{
+  "name": "raspberry-pi-camera",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "knox": "^0.9.1",
+    "moment": "^2.8.4",
+    "raspicam": "^0.2.13"
+  }
+}
