@@ -25,7 +25,7 @@ function removeLocalFile(filename) {
 function uploadToS3(localPath, filename) {
   var client = knox.createClient(credentials);
   client.putFile(
-    localPath + filename, filename,
+    localPath + filename, filename, { 'x-amz-acl': 'public-read' },
     function(err, result) {
       if (err) {
         err = new Error('Upload Failure: ' + err);
