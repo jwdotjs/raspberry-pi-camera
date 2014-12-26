@@ -42,7 +42,7 @@ function snapPhoto() {
   var filename;
 
   if (! process.env.stream) {
-    filename = moment().format('A_MM-DD-YYYY_h:mm:ss') + '.jpg';
+    filename = moment().format() + '.jpg';
   } else {
     filename = 'stream.jpg';
   }
