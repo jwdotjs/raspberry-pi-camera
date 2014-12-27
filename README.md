@@ -12,6 +12,8 @@ taking pictures and uploading your photos to S3.
 You can also pass a few arguments when running the script. Currently the script supports
 width, height, and delay (between images). For example 'delay=10000 width=1024 height=768 node index'
 
+(To install Node.js on Raspberry Pi: http://revryl.com/2014/01/04/nodejs-raspberry-pi/)
+
 ## Motion detection
 
 Here are instructions on how to download and use motion detection with your Raspberry Pi Camera.
