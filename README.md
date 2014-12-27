@@ -17,7 +17,7 @@ width, height, and delay (between images). For example 'delay=10000 width=1024 h
 Here are instructions on how to download and use motion detection with your Raspberry Pi Camera.
 I will be modifying pimotion.py shortly for consumption by S3.
 
-
+```
 mkdir pi-motion && cd ./pi-motion
 
 wget https://raw.githubusercontent.com/pageauc/pi-motion-orig/master/source/pimotion.py
@@ -31,6 +31,7 @@ sudo apt-get install python-pip
 sudo pip install Pillow
 
 ./pimotion.py
+```
 
 (Claude Pageau has a sync.sh script for google drive if you prefer over S3.
 It can be found here: https://github.com/pageauc/pi-motion-orig)
