@@ -14,6 +14,19 @@ width, height, and delay (between images). For example 'delay=10000 width=1024 h
 
 (To install Node.js on Raspberry Pi: http://revryl.com/2014/01/04/nodejs-raspberry-pi/)
 
+## Video Stream
+
+1. To use the live video stream run ./video/install.sh once then run ./video/stream.sh from command
+line on your Raspberry Pi.
+
+2. You will need a computer that has VLC and from VLC click File -> Open Network...
+From here enter the IP address of your Raspberry PI and the port number. (e.g. 192.168.1.1:8080)
+
+This will stream video to your VLC player at about a 2-3 second delay. There are options to use FFMPEG
+to convert the encoding from H.264 to MP4 so that you can display the stream on a web server with a video
+tag, but other users have reported this will cause a 20 second delay. I have not tried this solution myself
+but will post it in the future so all your options are in one place.
+
 ## Motion detection
 
 Here are instructions on how to download and use motion detection with your Raspberry Pi Camera.
